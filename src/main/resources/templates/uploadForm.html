@@ -1,0 +1,34 @@
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+	<div th:if="${message}">
+		<h2 th:text="${message}"/>
+	</div>
+
+	<div>
+		<form method="POST" enctype="multipart/form-data" action="/atalmatal/ashimashi/">
+			<table>
+				<tr><td>File to upload:</td><td><input type="file" name="file" /></td></tr>
+                <tr><td></td> <td>      <div class="g-recaptcha" data-sitekey="6LfgQl8oAAAAAM23fJ6li1-jDrW5wiUw1wpQpIiI"></div>
+                </td></tr>
+				<tr><td></td><td><input type="submit" value="Upload" /></td></tr>
+                <tr><td></td><td><button class="g-recaptcha"
+                                         data-sitekey="YOUR_SITE_KEY"
+                                         data-callback="onSubmit">Submit</button></td></tr>
+			</table>
+		</form>
+	</div>
+
+	<div>
+		<ul>
+			<li th:each="file : ${files}">
+				<a th:href="${file}" th:text="${file}" />
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>

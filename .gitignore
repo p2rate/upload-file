@@ -1,0 +1,78 @@
+# Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Compiled Files
+bin/
+build/
+out/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Application properties
+application.properties
+
+# Dependency directories
+## Maven
+.m2/
+
+## Gradle
+.gradle/
+
+# IDE (Eclipse, IntelliJ)
+.idea/
+.classpath
+.project
+
+# Compiled class file
+bin/
+
+# Logs
+logs/
+
+# .iml files
+*.iml
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# .idea workspace files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+
+# User-specific files
+*.suo
+
